@@ -1,0 +1,77 @@
+/* 전체 폰트 */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+/* 상단 로고 고정 */
+.header-logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+/* 좌측 메뉴 고정 */
+nav {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 메인 콘텐츠 영역 */
+.main-content {
+    margin-left: 150px;
+    padding: 20px;
+    max-width: 800px;
+}
+
+/* Home 페이지 Welcome */
+.welcome-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 11pt;
+}
+
+/* Works 년도 리스트 */
+.year-list {
+    margin-left: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.year-list li {
+    margin-bottom: 5px;
+}
+
+/* 기존 CSS 그대로 유지... */
+
+/* 모든 링크 스타일 */
+a {
+    color: blue;           /* 파란색 글씨 */
+    text-decoration: underline; /* 밑줄 */
+}
+
+a:hover {
+    color: darkblue;       /* 마우스 오버 시 조금 진한 파랑 */
+}
