@@ -20,7 +20,7 @@ body {
 /* 좌측 메뉴 고정 */
 sidebar {
     position: fixed;      /* 화면 좌측에 고정 */
-    top: 150;            /* 상단 여백 */
+    top: 80;            /* 상단 여백 */
     left: 40;           /* 좌측 여백 */
     display: flex;         /* flex 사용 */
     flex-direction: column; !important; 
