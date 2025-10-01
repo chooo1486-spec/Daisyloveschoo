@@ -24,6 +24,7 @@ nav {
     top: 100px;
     display: flex;
     flex-direction: column;align-items: flex-start;
+    font-size: 10pt;
     gap: 20px;
     padding: 20px;
 }
@@ -50,7 +51,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    font-size: 11pt;
+    top: 10px;
+    font-size: 10pt;
 }
 
 /* Works 년도 리스트 */
