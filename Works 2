@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Works - Choo Youngjin</title>
+<meta charset="UTF-8">
+    <title>About - Choo Youngjin</title>
+    <style>
+        body {
+            margin:0;
+            font-family: Helvetica, sans-serif;
+            font-size: 10pt;
+            background-color: white;
+            color: black;
+        }
+
+        header .site-title {
+            position: fixed;
+            top:10px;
+            left:20px;
+            font-size:12pt;
+            font-weight:bold;
+        }
+
+        .sidebar {
+            position: fixed;
+            top:80px;
+            left:0;
+            width:150px;
+            height:100%;
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+            padding-left:20px;
+        }
+
+        .sidebar a {
+            color:blue;
+            text-decoration:underline;
+            display:block;
+        }
+
+        .content {
+            margin-left: 180px;
+            padding-top: 90px; /* 상단 공간 확보 */
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+        .content p { 
+            padding-top: 0px;
+            margin-left: 0px;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+    </style></head>
+<body>
+    <header>
+        <div class="site-title">Choo Youngjin</div>
+    </header>
+
+    <nav class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="works.html">Works</a>
+        <a href="x.html">X</a>
+        <a href="text.html">Text</a>
+        <a href="project.html">Project</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="content">
+        Updated annually.<br/>
+        <br/>
+        <br/>
+        <div class="works-years">
+            <!-- 외부 Google Drive 링크 예시 -->
+            <a href="https://drive.google.com/file/d/1DbjWu-83XRl1J0vF65bOH6GsbruZRKSj/view?usp=sharing" target="_blank">2025</a><br/>
+            <a href="https://drive.google.com/file/d/1tQMoLcnY_VkxPi_mMUOOgH6Q55UfCaJ4/view?usp=share_link">2024</a><br/>
+            <a href="https://drive.google.com/file/d/1dpej2OI8dv7Y0FbqIGwFRjEHEQauEe-A/view?usp=share_link" target="_blank">~2023</a><br/>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
