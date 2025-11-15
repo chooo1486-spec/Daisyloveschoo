@@ -52,8 +52,64 @@
             line-height: 1.8;
             padding-left: 20px;
         }
-    </style></head>
+        /* 갤러리 바둑판 스타일 */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* 모달(확대보기) 스타일 */
+    .modal {
+      display: none; /* 숨김 상태 */
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+
+    .modal:target {
+      display: flex;
+    }
+
+    /* 닫기 버튼 */
+    .close {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
 <body>
+    
     <header>
         <div class="site-title">Choo Youngjin</div>
     </header>
@@ -74,34 +130,60 @@
         separate archive. <br/>
         별도의 아카이브<br/>
         <br/>
-        <img src="img/1main.jpg" width="200">
-        <img src="img/2main.jpg" width="200">
-        <img src="img/3main.jpg" width="200">
-        <img src="img/4main.jpg" width="200">
-        <img src="img/5main.jpg" width="200">
-        <img src="img/1.jpg" width="200">
-        <img src="img/2.jpg" width="200">
-        <img src="img/3.jpg" width="200">
-        <img src="img/4.jpg" width="200">
-        <img src="img/5.jpg" width="200">
-        <img src="img/6.jpg" width="200">
-        <img src="img/7.jpg" width="200">
-        <img src="img/8.jpg" width="200">
-        <img src="img/9.jpg" width="200">
-        <img src="img/10.jpg" width="200">
-        <img src="img/10-2.jpg" width="200">
-        <img src="img/10-3.jpg" width="200">
-        <img src="img/11.jpg" width="200">
-        <img src="img/12.jpg" width="200">
-        <img src="img/13.jpg" width="200">
-        <img src="img/14.jpg" width="200">
-        <img src="img/15.jpg" width="200">
-        <img src="img/16.jpg" width="200">
-        <img src="img/17.jpg" width="200">
-        <img src="img/18.jpg" width="200">
-        
+        <div class="gallery">
+        <a href="#img1"><img src="img/1main.jpg" alt="이미지 1"></a>
+        <a href="#img2"><img src="img/2main.jpg" alt="이미지 2"></a>
+        <a href="#img3"><img src="img/3main.jpg" alt="이미지 3"></a>
+        <a href="#img4"><img src="img/4main.jpg" alt="이미지 4"></a>
+        <a href="#img4"><img src="img/5main.jpg" alt="이미지 4"></a>
 
-        
-    </main>
+        <a href="#img1"><img src="img/1.jpg" alt="이미지 1"></a>
+        <a href="#img2"><img src="img/2.jpg" alt="이미지 2"></a>
+        <a href="#img3"><img src="img/3.jpg" alt="이미지 3"></a>
+        <a href="#img4"><img src="img/4.jpg" alt="이미지 4"></a>
+        <a href="#img4"><img src="img/5.jpg" alt="이미지 4"></a>  
+        <a href="#img1"><img src="img/6.jpg" alt="이미지 1"></a>
+        <a href="#img2"><img src="img/7.jpg" alt="이미지 2"></a>
+        <a href="#img3"><img src="img/8.jpg" alt="이미지 3"></a>
+        <a href="#img4"><img src="img/9.jpg" alt="이미지 4"></a>
+        <a href="#img4"><img src="img/10.jpg" alt="이미지 4"></a>  
+        <a href="#img1"><img src="img/10-2.jpg" alt="이미지 1"></a>
+        <a href="#img2"><img src="img/10-3.jpg" alt="이미지 2"></a>
+        <a href="#img3"><img src="img/11.jpg" alt="이미지 3"></a>
+        <a href="#img4"><img src="img/12.jpg" alt="이미지 4"></a>
+        <a href="#img4"><img src="img/13.jpg" alt="이미지 4"></a>  
+        <a href="#img1"><img src="img/14.jpg" alt="이미지 1"></a>
+        <a href="#img2"><img src="img/15.jpg" alt="이미지 2"></a>
+        <a href="#img3"><img src="img/16.jpg" alt="이미지 3"></a>
+        <a href="#img4"><img src="img/17.jpg" alt="이미지 4"></a>
+        <a href="#img4"><img src="img/18.jpg" alt="이미지 4"></a>  
+
+            </div>
+
+        <div class="modal" id="modal">
+    <img id="modalImg" src="" alt="">
+  </div>
+
+  <script>
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        modal.classList.add('show');
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+      });
+    });
+
+    // 모달 배경 클릭 시 닫기
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('show');
+      }
+    });
+  </script>
+
 </body>
 </html>
+    
