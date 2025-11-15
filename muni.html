@@ -98,21 +98,22 @@
       display: flex;
     }
 
-        /* X 버튼 */
-    .close-btn {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      font-size: 30px;
-      color: white;
-      cursor: pointer;
-      z-index: 1100;
-    }
+       /* X 버튼 */
+  .close-btn {
+    position: fixed; /* 모달 안에서 화면 우측 상단 고정 */
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 1100; /* 이미지보다 위로 */
+    user-select: none; /* 드래그 방지 */
+  }
 
-    .close-btn:hover {
-      color: #ccc;
-    }
-   
+  .close-btn:hover {
+    color: #ccc;
+  }
   </style>
 </head>
 <body>
