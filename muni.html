@@ -159,23 +159,18 @@
 
   <script>
     const modal = document.getElementById('modal');
-    const modalImg = document.getElementById('modalImg');
+const modalImg = document.getElementById('modalImg');
 
-    document.querySelectorAll('.gallery img').forEach(img => {
-      img.addEventListener('click', () => {
-        modal.classList.add('show');
-        modalImg.src = img.src;
-        modalImg.alt = img.alt;
-      });
-    });
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', () => {
+    modal.classList.add('show');
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+  });
+});
 
-    // 배경 클릭 시 모달 닫기
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.remove('show');
-      }
-    });
-  </script>
-
-</body>
-</html>
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {  // 이미지가 아닌 모달 배경 클릭 시
+    modal.classList.remove('show');
+  }
+});
