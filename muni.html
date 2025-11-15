@@ -98,6 +98,20 @@
       display: flex;
     }
 
+        /* X 버튼 */
+    .close-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      z-index: 1100;
+    }
+
+    .close-btn:hover {
+      color: #ccc;
+    }
    
   </style>
 </head>
@@ -170,12 +184,11 @@
       });
     });
 
-    // 모달 배경 클릭 → 모달 닫기
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) { // 이미지가 아닌 모달 배경 클릭 시
-        modal.classList.remove('show');
-      }
+     // X 버튼 클릭 → 모달 닫기
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('show');
     });
+  </script>
   </script>
 
 </body>
