@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>X - Choo Youngjin</title>
+<meta charset="UTF-8">
+    <title>About - Choo Youngjin</title>
+    <style>
+        body {
+            margin:0;
+            font-family: Helvetica, sans-serif;
+            font-size: 10pt;
+            background-color: white;
+            color: black;
+        }
 
+        header .site-title {
+            position: fixed;
+            top:10px;
+            left:20px;
+            font-size:12pt;
+            font-weight:bold;
+        }
+
+        .sidebar {
+            position: fixed;
+            top:80px;
+            left:0;
+            width:150px;
+            height:100%;
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+            padding-left:20px;
+        }
+
+        .sidebar a {
+            color:blue;
+            text-decoration:underline;
+            display:block;
+        }
+
+       .content {
+            margin-left: 180px;
+            padding-top: 90px; /* 상단 공간 확보 */
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+        .content p { 
+            padding-top: 0px;
+            margin-left: 0px;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+        /* 갤러리 바둑판 스타일 */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      border-radius: 0; /* 모서리 둥글지 않게 */
+      transition: transform 0.2s;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+    
+    <header>
+        <div class="site-title">Choo Youngjin</div>
+    </header>
+
+    <nav class="sidebar">
+         <a href="index.html">Home</a> <br/>
+        <a href="works.html">Works</a>
+        <a href="works 2.html">Works2</a>
+        <a href="project.html">Project</a> 
+        <a href="text.html">Text</a> <br/>
+        <a href="flat.html">Flat</a> <br/>
+        <a href="about.html">About</a> 
+    </nav>
+
+    <main class="content">
+        separate archive. <br/>
+        별도의 아카이브<br/>
+        </p><a href="https://www.instagram.com/munidotco?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">muni</a><br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="gallery">
+        <a href="#img1"><img src="img/1main.jpg" alt="이미지 1"></a>
+        <a href="#img2"><img src="img/2main.jpg" alt="이미지 2"></a>
+        <a href="#img3"><img src="img/3main.jpg" alt="이미지 3"></a>
+        <a href="#img4"><img src="img/4main.jpg" alt="이미지 4"></a>
+        <a href="#img4"><img src="img/5main.jpg" alt="이미지 4"></a> 
+
+            </div>
+
+       
+</html>
