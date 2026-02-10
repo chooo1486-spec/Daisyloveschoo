@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Works - Choo Youngjin</title>
-<meta charset="UTF-8">
-    <title>About - Choo Youngjin</title>
+
     <style>
         body {
-            margin:0;
+            margin: 0;
             font-family: Helvetica, sans-serif;
             font-size: 10pt;
             background-color: white;
@@ -16,137 +15,135 @@
 
         header .site-title {
             position: fixed;
-            top:10px;
-            left:20px;
-            font-size:12pt;
-            font-weight:bold;
+            top: 10px;
+            left: 20px;
+            font-size: 12pt;
+            font-weight: bold;
         }
 
         .sidebar {
             position: fixed;
-            top:80px;
-            left:0;
-            width:150px;
-            height:100%;
-            display:flex;
-            flex-direction:column;
-            gap:10px;
-            padding-left:20px;
+            top: 80px;
+            left: 0;
+            width: 150px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 20px;
         }
 
         .sidebar a {
-            color:blue;
-            text-decoration:underline;
-            display:block;
+            color: blue;
+            text-decoration: underline;
+            display: block;
         }
 
         .content {
             margin-left: 180px;
-            padding-top: 90px; /* 상단 공간 확보 */
-            line-height: 1.8;
+            padding-top: 90px;
             padding-left: 20px;
-        }
-        .content p { 
-            padding-top: 0px;
-            margin-left: 0px;
             line-height: 1.8;
-            padding-left: 20px;
         }
-    </style></head>
+
+        /* === Works columns === */
+
+        .works-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5em;
+            margin-top: 4em;
+        }
+
+        .works-title {
+            margin-bottom: 1.5em;
+            font-weight: normal;
+        }
+
+        .works-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .works-column li {
+            margin-bottom: 0.8em;
+        }
+
+        .works-column a {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
 <body>
     <header>
         <div class="site-title">Choo Youngjin</div>
     </header>
 
-   <nav class="sidebar">
-        <a href="index.html">Home</a> <br/>
+    <nav class="sidebar">
+        <a href="index.html">Home</a>
         <a href="works.html">Works</a>
         <a href="works 2.html">Works2</a>
-        <a href="text.html">Text</a> <br/>
-        <a href="flat.html">Flat</a> <br/>
-        <a href="about.html">About</a> 
+        <a href="text.html">Text</a>
+        <a href="flat.html">Flat</a>
+        <a href="about.html">About</a>
     </nav>
 
     <main class="content">
-        <br/>
-        <br/>
-        <br/>
-        <div class="works-years">
-            <!-- 외부 Google Drive 링크 예시 -->
-            Overall Portfolio<br/><br/>
-            <a href="https://drive.google.com/file/d/1dOiCOGviJC7nRkJgiJGt61IgueHUf_dv/view?usp=sharing">2024-2026</a><br/>
-            <a href="https://drive.google.com/file/d/1CMT49eyRWcTzzITvA3z9J86iGR5XaIKX/view?usp=sharing">2022-2024</a><br/>
+        <div class="works-columns">
+
+            <!-- Paintings -->
+            <div class="works-column">
+                <div class="works-title">Paintings</div>
+                <ul>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1ZQGs-0IBOPkKIDRkIj0C0vofYZm1OeZE/view?usp=sharing">2024–</a>
+                    </li>
+                    <li>
+                        <a href="#">2022–2024</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Fabrics -->
+            <div class="works-column">
+                <div class="works-title">Fabrics</div>
+                <ul>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1MAM73DzWXmp-Hcw0LD6HFrBpIco1A31y/view?usp=sharing">2024-2026</a>
+                    </li>
+                    <li>
+                        <a href="#">2021–2022</a>
+                    </li>
+                </ul>
+            </div>
             
+             <!-- Papers -->
+            <div class="works-column">
+                <div class="works-title">Papers</div>
+                <ul>
+                    <li>
+                        <a href="https://drive.google.com/file/d/17zR5c86mPR7163n4iEQfBN9ytQJj_qPi/view?usp=sharing">2024-2026</a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1NgZGo9pljukmcwPPFlQYBMPMfoh7LFno/view?usp=sharing">2022–2024</a>
+                    </li>
+                </ul>
+                
+        </div>
+            <!-- Papers -->
+            <div class="works-column">
+                <div class="works-title">others</div>
+                <ul>
+                    <li>
+                       coming soon
+                    </li>
+                 
+                    </li>
+                </ul>
         </div>
     </main>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
